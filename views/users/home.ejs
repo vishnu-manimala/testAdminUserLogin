@@ -1,0 +1,37 @@
+<%- include ('../layouts/header.ejs') %>
+
+<div class="section">
+  <div class="container-fluid p-0 ">
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color:white text-align" href="#">WELCOME TO HOME PAGE</a>
+      </div>
+    </nav>
+  </div>
+  </div>
+  <div class="text-center center-div mt-5 fw-bold mb-2">
+    <div class="container w-25  py-5 mt-5 text-white">
+        <h3>Welcome </h3>
+        <h5><%=locals.user ? user : "User" %></h5>
+    </div>
+</div>
+  <div class="section">
+    <div class="container-fluid">
+      <div>
+          <div class="row">
+          <div class=" alert text-success m-0 p-0  text-center  " role="alert">
+          <h5 class=" alert-heading ">Login Successfull  </h5>
+          </div>
+         </div>
+         <div class="row">
+          <form action="/logout" class="mt-1 mb-3 col-md-12 d-flex justify-content-center">
+          
+            <a href="/logout" class="btn btn-outline-danger">Logout</a>
+          </form> 
+         </div>
+      </div>
+    </div>
+  </div>
+
+     
+    <%- include ('../layouts/footer.ejs') %>
